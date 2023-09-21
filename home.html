@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+  <div class="home">
+
+        <h1>Welcome to the Home Page!</h1>
+        <button onclick="logout()">Logout</button>
+     
+
+
+        <h1>javaScript Variable</h1>
+	
+	    <p>The result of adding 5 + 2 + 3 is : </p>
+		<P id = "demo1"></p>
+		<button  type = "submit" onclick= " adding()"> Show Result </button>
+	
+	
+
+	
+	 <script>
+	
+        function adding() {
+		
+		    let x = 5 + 2 + 3;
+			document.getElementById("demo1").innerHTML = x;
+			
+        }
+    </script>
+
+    <script>
+	
+        function logout() {
+            window.location.href = "index.html";
+			
+        }
+        </script>
+
+
+
+	<br>
+	<br>
+	<br>
+	<hr>
+	<br>
+    <div class="Input Two numbers">
+	
+        <h3> Input Two numbers</h3>
+         <input type="number" id="num1" placeholder="Enter first number"><br>
+        <input type="number" id="num2" placeholder="Enter second number"><br>
+        <button onclick="add()">Addition</button>
+         <button onclick="subtract()">Subtraction</button>
+        <button onclick="multiply()">Multiplication</button>
+        <button onclick="divide()">Division</button>
+        <p id="result"></p>
+    </div>	
+</body>
+</html>
